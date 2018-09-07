@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Wetware Systems</string>
+        <string name="action_settings">Settings</string>
+        <string name="website">Visit Us</string>
+        <string name="email_us">Email Us</string>
+        <string name="clutch">Clutch</string>
+        <string name="app_futura">App Futura</string>
+        <string name="skype">Skype</string>
+        <string name="name">Your Name</string>
+        <string name="your_details">Talk to us</string>
+        <string name="email_id">Email Address</string>
+        <string name="skype_id">Your Skype Id</string>
+        <string name="message">Enter your message</string>
+        <string name="submit">Submit</string>
+        <string name="attachment">Attachement</string>
+        <string name="mobile">Mobile Number</string>
+    </resources>

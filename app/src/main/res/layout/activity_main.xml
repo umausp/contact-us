@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:showIn="@layout/activity_main">
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/web"
+        android:layout_margin="@dimen/fab_margin"
+        style="@style/Widget.MaterialComponents.Chip.Action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/website"
+        app:chipIcon="@drawable/web"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/email"
+        android:layout_margin="@dimen/fab_margin"
+        style="@style/Widget.MaterialComponents.Chip.Action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email_us"
+        app:chipIcon="@drawable/email"
+        app:layout_constraintStart_toEndOf="@id/web"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/clutch"
+        android:layout_margin="@dimen/fab_margin"
+        style="@style/Widget.MaterialComponents.Chip.Action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clutch"
+        app:chipIcon="@drawable/clutch"
+        app:layout_constraintStart_toEndOf="@id/email"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/app_futura"
+        android:layout_margin="@dimen/fab_margin"
+        style="@style/Widget.MaterialComponents.Chip.Action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_futura"
+        app:chipIcon="@drawable/app_futura"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/web" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/skype"
+        android:layout_margin="@dimen/fab_margin"
+        style="@style/Widget.MaterialComponents.Chip.Action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/skype"
+        app:chipIcon="@drawable/ic_skype"
+        app:layout_constraintStart_toEndOf="@id/app_futura"
+        app:layout_constraintTop_toBottomOf="@id/web" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_margin="@dimen/fab_margin"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:id="@+id/talk_to_us_text"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_futura"
+        android:layout_height="wrap_content"
+        android:text="@string/your_details"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:layout_constraintTop_toBottomOf="@id/talk_to_us_text"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:inputType="textPersonName"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_id"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:inputType="textEmailAddress"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_id"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/mobile"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:layout_constraintTop_toBottomOf="@id/email_id"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:hint="@string/mobile"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/skype_id"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:layout_constraintTop_toBottomOf="@id/mobile"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/skype_id"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:layout_constraintTop_toBottomOf="@id/skype_id"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:hint="@string/message"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/attachement"
+        android:layout_margin="@dimen/fab_margin"
+        style="@style/Widget.MaterialComponents.Chip.Action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/attachment"
+        app:chipIcon="@drawable/ic_attachment_black_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/message" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submit_button"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/attachement"
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

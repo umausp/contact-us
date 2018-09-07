@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "410029086139",
+    "firebase_url": "https://contact-us-882e8.firebaseio.com",
+    "project_id": "contact-us-882e8",
+    "storage_bucket": "contact-us-882e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410029086139:android:6e2d0ff1d3a55346",
+        "android_client_info": {
+          "package_name": "in.wetware.wetware_systems"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "410029086139-h3k823numi8rn51030vqp48kqdeitltn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.wetware.wetware_systems",
+            "certificate_hash": "7cac73dafc0385e9f41e7db49e75f36f1ca76c66"
+          }
+        },
+        {
+          "client_id": "410029086139-gv8pnenpimehui98s3f2sgmfubdrcqnv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZPcadpVTmfMkyfSzTrbQyxuW6Yas7gvA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "410029086139-2b5olgvgnlhp85a9mred8fpm4huskekv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
